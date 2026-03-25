@@ -2,21 +2,12 @@
 
 Example Astro app configured for [Webflow Cloud](https://webflow.com/cloud).
 
-<p>
-  <a href="https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/readme/deploy-webflow-dark.svg" />
-      <img src="docs/readme/deploy-webflow-light.svg" alt="Deploy to Webflow" width="172" height="32" />
-    </picture>
-  </a>
-</p>
+[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro)
 
 ## Project structure
 
 ```text
 /
-├── docs/
-│   └── readme/
 ├── public/
 ├── src/
 │   ├── layouts/
@@ -35,6 +26,7 @@ Example Astro app configured for [Webflow Cloud](https://webflow.com/cloud).
 | `npm run dev`     | Start dev server at `http://localhost:4321` |
 | `npm run build`   | Production build to `./dist/`               |
 | `npm run preview` | Build and preview with Wrangler locally     |
+| `npm run deploy`  | Deploy with Webflow Cloud CLI               |
 
 ## Learn more
 
