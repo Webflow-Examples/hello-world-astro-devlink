@@ -35,7 +35,6 @@ Example Astro app configured for [Webflow Cloud](https://webflow.com/cloud).
 | `npm run dev`     | Start dev server at `http://localhost:4321` |
 | `npm run build`   | Production build to `./dist/`               |
 | `npm run preview` | Build and preview with Wrangler locally     |
-| `npm run deploy`  | Deploy with Webflow Cloud CLI               |
 
 ## Learn more
 
