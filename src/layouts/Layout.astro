@@ -1,10 +1,11 @@
 ---
-import { DevLinkProvider } from '../../devlink/DevLinkProvider';
-import "../../devlink/global.css"; // Webflow Styles
+import { DevLinkProvider } from "../../webflow/DevLinkProvider";
+import { DEVLINK_SCOPE_CLASS } from "../../webflow/devlinkScope";
+import "../../webflow/css/global.css"; // Webflow Styles
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class={DEVLINK_SCOPE_CLASS}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -23,10 +24,27 @@ import "../../devlink/global.css"; // Webflow Styles
 </html>
 
 <style>
+	:root {
+		--background: #ffffff;
+		--foreground: #171717;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--background: #0a0a0a;
+			--foreground: #ededed;
+		}
+	}
+
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	body {
+		background: var(--background);
+		color: var(--foreground);
 	}
 </style>
