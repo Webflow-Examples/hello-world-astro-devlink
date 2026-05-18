@@ -1,5 +1,6 @@
 ---
 import { DevLinkProvider } from "../../webflow/DevLinkProvider";
+import { DEVLINK_SCOPE_CLASS } from "../../webflow/devlinkScope";
 import "../../webflow/css/global.css"; // Webflow Styles
 ---
 
@@ -15,7 +16,7 @@ import "../../webflow/css/global.css"; // Webflow Styles
 		<meta name="generator" content={Astro.generator} />
 		<title>Webflow Cloud - Astro Starter</title>
 	</head>
-	<body>
+	<body class={DEVLINK_SCOPE_CLASS}>
 		<DevLinkProvider client:load>
 			<slot />
 		</DevLinkProvider>
