@@ -8,7 +8,6 @@
     "componentGroups": ".*",
     "ts": false,
     "cssScopes": true,
-    "relativeHrefRoot": "/",
-    "treeShake": false
+    "relativeHrefRoot": "/"
   }
 }
