@@ -3,11 +3,20 @@
     "framework": "astro"
   },
   "devlink-export": {
-    "rootDir": "./src/webflow",
+    "rootDir": "./webflow",
     "components": ".*",
     "componentGroups": ".*",
     "ts": false,
     "cssScopes": true,
-    "relativeHrefRoot": "/"
-  }
+    "relativeHrefRoot": "/",
+    "treeShake": false
+  },
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1779129526191,
+      "version": "1.21.0"
+    }
+  },
+  "siteId": "63d85500e0557a18cd5a7601"
 }
