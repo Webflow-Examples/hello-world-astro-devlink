@@ -5,7 +5,7 @@ import "../../webflow/css/global.css"; // Webflow Styles
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class={DEVLINK_SCOPE_CLASS}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -16,7 +16,7 @@ import "../../webflow/css/global.css"; // Webflow Styles
 		<meta name="generator" content={Astro.generator} />
 		<title>Webflow Cloud - Astro Starter</title>
 	</head>
-	<body class={DEVLINK_SCOPE_CLASS}>
+	<body>
 		<DevLinkProvider client:load>
 			<slot />
 		</DevLinkProvider>
